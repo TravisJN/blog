@@ -10,8 +10,18 @@ function App() {
     <div className="App">
       <div className="header-container">
         <p className="header-text">Travis Neufeld.</p>
-        <p className={`header-text link ${currentView === 'Works' ? 'underline' : ''}`} onClick={() => setView('Works')}>Works</p>
-        <p className={`header-text link ${currentView === 'About' ? 'underline' : ''}`} onClick={() => setView('About')}>About</p>
+        <p
+          className={`header-text link ${currentView === 'Works' ? 'underline' : ''}`}
+          onClick={() => setView('Works')}
+        >
+          Works
+        </p>
+        <p
+          className={`header-text link ${currentView === 'About' ? 'underline' : ''}`}
+          onClick={() => setView('About')}
+        >
+          About
+        </p>
       </div>
       {currentView === 'Works' && <Works />}
       {currentView === 'About' && <About />}
