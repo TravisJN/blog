@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './App.css';
 import Works from './components/Works';
 import About from './components/About';
+import Apps from './components/Apps';
+import Sites from './components/Sites';
 
 function App() {
   const [currentView, setView] = useState('Works');
@@ -17,6 +19,18 @@ function App() {
           Works
         </p>
         <p
+          className={`header-text link ${currentView === 'Apps' ? 'underline' : ''}`}
+          onClick={() => setView('Apps')}
+        >
+          Apps
+        </p>
+        <p
+          className={`header-text link ${currentView === 'Sites' ? 'underline' : ''}`}
+          onClick={() => setView('Sites')}
+        >
+          Sites
+        </p>
+        <p
           className={`header-text link ${currentView === 'About' ? 'underline' : ''}`}
           onClick={() => setView('About')}
         >
@@ -24,6 +38,8 @@ function App() {
         </p>
       </div>
       {currentView === 'Works' && <Works />}
+      {currentView === 'Apps' && <Apps />}
+      {currentView === 'Sites' && <Sites />}
       {currentView === 'About' && <About />}
     </div>
   );
