@@ -31,6 +31,13 @@ function Navbar() {
         Sites
       </Link>
       <Link
+        to="/resume"
+        className={`navbar-text ${currentView === '/resume' ? 'underline' : ''}`}
+        onClick={() => setView('/resume')}
+      >
+        Resume
+      </Link>
+      <Link
         to="/about"
         className={`navbar-text ${currentView === '/about' ? 'underline' : ''}`}
         onClick={() => setView('/about')}

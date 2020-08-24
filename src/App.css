@@ -14,28 +14,34 @@
 
 .header-container {
   display: flex;
-  height: 5em;
+  flex-direction: column;
+  height: 9em;
   width: 90%;
+  margin-top: 25px;
   margin-bottom: 50px;
+  /* background-color: rgba(0, 255, 0, 0.2); */
 }
 
 .site-title-text {
-  font-family: "Amatic SC";
+  font-family: "Noto Sans TC";
   font-size: 4em;
+  font-weight: 300;
 }
 
 .navbar {
   display: flex;
-  margin-left: 2em;
+  margin-left: 0.5em;
   align-items: flex-end;
+  /* margin-top: 1em; */
   /* background-color: rgba(255, 0, 0, 0.3); */
 }
 
 .navbar-text {
-  font-family: "Amatic SC";
-  font-size: 3em;
-  margin-left: 1em;
+  font-family: "Noto Sans TC";
+  font-size: 2.5em;
+  margin-right: 1em;
   text-decoration: none;
+  color: black;
 }
 
 .navbar-text:visited {
@@ -51,21 +57,19 @@
   width: 90%;
   display: flex;
   flex-direction: column;
+  /* background-color: rgba(255, 0, 0, 0.3); */
 }
 
 .links-list {
-  font-family: "Amatic SC";
+  font-family: "Alata";
   font-size: 3em;
   display: flex;
   flex-direction: column;
-}
-
-.about_container {
-  width: 90%;
 }
 
 .logger-container {
   width: 70%;
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
 }
