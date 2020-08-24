@@ -22,23 +22,25 @@ function App() {
           <Navbar />
         </div>
 
-        <Switch>
-          <Route path="/works">
-            <Works />
-          </Route>
-          <Route path="/apps">
-            <Apps />
-          </Route>
-          <Route path="/sites">
-            <Sites />
-          </Route>
-          <Route path="/resume">
-            <Resume />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-        </Switch>
+        <div className="main-container">
+          <Switch>
+            <Route path="/works">
+              <Works />
+            </Route>
+            <Route path="/apps">
+              <Apps />
+            </Route>
+            <Route path="/sites">
+              <Sites />
+            </Route>
+            <Route path="/resume">
+              <Resume />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+          </Switch>
+        </div>
       </div>
     </Router>
   );

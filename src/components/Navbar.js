@@ -4,8 +4,6 @@ import { Link, useLocation } from 'react-router-dom';
 function Navbar() {
   const { pathname } = useLocation();
   const [currentView, setView] = useState(pathname);
-  console.log('pathname: ', pathname);
-  console.log('location.pathname: ', window.location.pathname);
 
   return (
     <div className="navbar">

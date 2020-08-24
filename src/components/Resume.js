@@ -1,12 +1,15 @@
 import React from 'react';
+import { Fade } from 'react-awesome-reveal';
 
 function Resume() {
   return (
-    <div className="main-container">
-      <div className="links-list">
-        <a href="https://www.linkedin.com/in/travisjneufeld/">LinkedIn Profile</a>
+    <Fade>
+      <div className="main-container">
+        <div className="links-list">
+          <a href="https://www.linkedin.com/in/travisjneufeld/">LinkedIn Profile</a>
+        </div>
       </div>
-    </div>
+    </Fade>
   );
 }
 
