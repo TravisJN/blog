@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  Redirect,
 } from "react-router-dom";
 import './App.css';
 import Navbar from './components/Navbar';
@@ -16,7 +17,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <h1 className="under-construction">Under Construction</h1>
         <div className="header-container">
           <div className="site-title-text">Travis Neufeld</div>
           <Navbar />
@@ -24,6 +24,9 @@ function App() {
 
         <div className="main-container">
           <Switch>
+            <Route exact path="/">
+              <Redirect to={{ pathname: '/about' }} />
+            </Route>
             <Route path="/works">
               <Works />
             </Route>
