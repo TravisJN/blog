@@ -3,6 +3,7 @@ import { Fade } from 'react-awesome-reveal';
 import HomeImage from '../assets/Home.png';
 import HistoryImage from '../assets/History.png';
 import FoodEntryImage from '../assets/FoodEntry.png';
+import AppStoreImage from '../assets/appstore.svg';
 
 function Apps() {
   const [currentApp, setApp] = useState('Logger');
@@ -21,6 +22,14 @@ function Apps() {
             <span>
               Meant to be used while you go. Simply record how you're feeling and what you've eaten. Ins and Outs will look for patterns and inform you of foods you should avoid.
             </span>
+
+            <a
+              href="https://apps.apple.com/us/app/ins-outs-food-symptom-log/id1529371763"
+              style={{ marginTop: 25, textDecoration: 'none' }}
+              target="_blank" rel="noopener noreferrer"
+            >
+              <img src={AppStoreImage} alt="Download from the app store" />
+            </a>
 
             <div className="logger-picture-container">
               <img src={HomeImage} width={150} height={330} alt="Ins and Outs app home page" />
