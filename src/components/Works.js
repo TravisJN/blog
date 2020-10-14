@@ -8,7 +8,7 @@ function Works() {
   return (
     <Fade>
       <div className="main-container">
-        <div className="links-list">
+        <div className="page-title">
           <span className="link" onClick={() => setWork('bomblobber')}>Bomb Lobber</span>
         </div>
         {currentWork === 'bomblobber' &&

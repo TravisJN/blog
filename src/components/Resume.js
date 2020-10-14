@@ -5,7 +5,7 @@ function Resume() {
   return (
     <Fade>
       <div className="main-container">
-        <div className="links-list">
+        <div className="page-title">
           <a href="https://www.linkedin.com/in/travisjneufeld/">LinkedIn Profile</a>
         </div>
       </div>

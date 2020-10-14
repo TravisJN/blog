@@ -57,27 +57,46 @@
   /* background-color: rgba(255, 0, 0, 0.3); */
 }
 
-.links-list {
+.page-title {
   font-family: "Alata";
   font-size: 3em;
   display: flex;
   flex-direction: column;
 }
 
-.link {
-  cursor: pointer;
+.links-list {
+  font-family: "Alata";
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: row;
 }
 
-.logger-container {
+.link {
+  cursor: pointer;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.link:visited {
+  color: black;
+}
+
+.app-container {
   width: 70%;
   display: flex;
   flex-direction: column;
   margin-top: 10px;
 }
 
-.logger-picture-container {
+.app-picture-container {
   display: flex;
   justify-content: space-around;
   margin-top: 25px;
   margin-bottom: 25px;
+}
+
+.privacy-policy {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
 }

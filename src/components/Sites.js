@@ -5,9 +5,8 @@ function Sites() {
   return (
     <Fade>
       <div className="main-container">
-        <div className="links-list">
+        <div className="page-title">
           <a href="http://brewingandbeer.com" className="link">Brewing and Beer</a>
-          <a href="https://practicalagile842645152.wordpress.com" className="link">Sensible Agile</a>
         </div>
       </div>
     </Fade>
