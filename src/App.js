@@ -12,6 +12,7 @@ import About from './components/About';
 import Apps from './components/Apps';
 import Sites from './components/Sites';
 import Resume from './components/Resume';
+import DarkestNight from './components/DarkestNight';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
       <div className="App">
         <div className="header-container">
           <div className="site-title-text">Travis Neufeld</div>
-          <Navbar />
+          {/* <Navbar /> */}
         </div>
 
         <div className="main-container">
@@ -41,6 +42,9 @@ function App() {
             </Route>
             <Route path="/about">
               <About />
+            </Route>
+            <Route path="/darkestnight">
+              <DarkestNight />
             </Route>
           </Switch>
         </div>
