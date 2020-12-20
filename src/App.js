@@ -18,10 +18,10 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <div className="header-container">
-          <div className="site-title-text">Travis Neufeld</div>
+        {/* <div className="header-container">
+          <div className="site-title-text">Travis Neufeld</div> */}
           {/* <Navbar /> */}
-        </div>
+        {/* </div> */}
 
         <div className="main-container">
           <Switch>
