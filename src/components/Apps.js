@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Fade } from 'react-awesome-reveal';
-import { Link, Switch, Route, useRouteMatch } from 'react-router-dom';
+import { Link, Switch, Route, useRouteMatch, Redirect, useLocation } from 'react-router-dom';
 import AppStoreImage from '../assets/appstore.svg';
 import PrivacyPolicy from './PrivacyPolicy';
 import InsAndOutsHomeImage from '../assets/InsAndOuts/Home.png';
@@ -12,13 +12,28 @@ import MacroRecipesRecipeImage from '../assets/MacroRecipes/Recipe.png';
 
 function Apps() {
   const { path, url } = useRouteMatch();
+  const { pathname } = useLocation();
+  const startingPath = pathname.replace('/apps/', '');
+  const [currentApp, setCurrentApp] = useState(startingPath === '/apps' ? 'ins-and-outs' : startingPath);  // hack to fix initial underline
 
   return (
     <Fade>
       <div className="main-container">
         <div className="links-list">
-          <Link className="link" to={`${url}/ins-and-outs`}>Ins & Outs</Link>
-          <Link className="link" to={`${url}/macro-recipes`}>Macro Recipes</Link>
+          <Link
+            className={`link ${currentApp === 'ins-and-outs' ? 'underline' : ''}`}
+            to={`${url}/ins-and-outs`}
+            onClick={() => setCurrentApp('ins-and-outs')}
+          >
+            Ins & Outs
+          </Link>
+          <Link
+            className={`link ${currentApp === 'macro-recipes' ? 'underline' : ''}`}
+            to={`${url}/macro-recipes`}
+            onClick={() => setCurrentApp('macro-recipes')}
+          >
+            Macro Recipes
+          </Link>
         </div>
 
         <Switch>
@@ -27,6 +42,9 @@ function Apps() {
           </Route>
           <Route path={`${path}/macro-recipes`}>
             <MacroRecipes />
+          </Route>
+          <Route path={'/apps'}>
+            <Redirect to={'/apps/ins-and-outs'} />
           </Route>
         </Switch>
       </div>
@@ -38,9 +56,9 @@ function InsAndOuts() {
   return (
     <Fade>
       <div className="app-container">
-        <span className="page-title">Ins and Outs: The Food Symptom Tracker</span>
+        <span className="page-title">Ins & Outs: The Food Symptom Log</span>
         <span>
-          Ins and Outs: The Food Symptom Tracker is an app for iOS and Android that tracks IBS symptoms with a simple intuitive UI.
+          Ins & Outs: The Food Symptom Log is an app for iOS and Android that tracks IBS symptoms with a simple intuitive UI.
         </span>
         <span>
           Meant to be used while you go. Simply record how you're feeling and what you've eaten. Ins and Outs will look for patterns and inform you of foods you should avoid.
@@ -55,9 +73,9 @@ function InsAndOuts() {
         </a>
 
         <div className="app-picture-container">
-          <img src={InsAndOutsHomeImage} width={150} height={330} alt="Ins and Outs app home page" />
-          <img src={InsAndOutsFoodEntryImage} width={150} height={330} alt="Ins and Outs app food entry page" />
-          <img src={InsAndOutsHistoryImage} width={150} height={330} alt="Ins and Outs app history page" />
+          <img src={InsAndOutsHomeImage} width={150} height={330} alt="Ins & Outs app home page" />
+          <img src={InsAndOutsFoodEntryImage} width={150} height={330} alt="Ins & Outs app food entry page" />
+          <img src={InsAndOutsHistoryImage} width={150} height={330} alt="Ins & Outs app history page" />
         </div>
 
         <PrivacyPolicy />

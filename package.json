@@ -1,6 +1,6 @@
 {
   "name": "travs-blog",
-  "homepage": ".",
+  "homepage": "http://travisneufeld.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

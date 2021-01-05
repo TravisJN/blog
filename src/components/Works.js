@@ -3,7 +3,7 @@ import Bomblobber from './Bomblobber';
 import { Fade } from 'react-awesome-reveal';
 
 function Works() {
-  const [currentWork, setWork] = useState(null);
+  const [currentWork, setWork] = useState('bomblobber');
 
   return (
     <Fade>
