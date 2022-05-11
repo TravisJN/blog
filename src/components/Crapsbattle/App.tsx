@@ -56,8 +56,6 @@ class App extends Component<Props, State> {
 
     const { isConnected } = this.state;
 
-    console.log("app.tsx: ", this.state.currentState);
-
     return (
       <div className="Craps-App">
         <PlayerInfo
@@ -244,9 +242,7 @@ class App extends Component<Props, State> {
     if (this.mGameModel.currentState === GAMESTATE.ENDGAME) {
       this.reset();
     } else {
-      console.log("advance before: ", this.mGameModel.currentState);
       this.mGameModel.advance();
-      console.log("advance after: ", this.mGameModel.currentState);
       showModal = this.mGameModel.winner !== WINNER.NONE;
       this.setState({
         currentState: this.mGameModel.currentState,

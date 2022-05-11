@@ -11,6 +11,8 @@ import About from "./components/About";
 import Apps from "./components/Apps";
 import Resume from "./components/Resume";
 
+console.log("sup");
+
 function App() {
   return (
     <Router>
