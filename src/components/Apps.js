@@ -23,6 +23,8 @@ import DlivrDriveHomeImage from "../assets/Dlivr/dlivr-drive-home.png";
 import DlivrDriveConnectImage from "../assets/Dlivr/dlivr-drive-connect.png";
 import DlivrDriveSummaryImage from "../assets/Dlivr/dlivr-drive-summary.png";
 
+import CrapsBattle from "./Crapsbattle";
+
 function Apps() {
   const { path, url } = useRouteMatch();
   const { pathname } = useLocation();
@@ -51,6 +53,15 @@ function Apps() {
           </Link>
           <Link
             className={`link ${
+              currentApp === "crapsbattle" ? "underline" : ""
+            }`}
+            to={`${url}/crapsbattle`}
+            onClick={() => setCurrentApp("crapsbattle")}
+          >
+            Craps Battle
+          </Link>
+          <Link
+            className={`link ${
               currentApp === "ins-and-outs" ? "underline" : ""
             }`}
             to={`${url}/ins-and-outs`}
@@ -75,6 +86,11 @@ function Apps() {
           </Route>
           <Route path={`${path}/bomblobber`}>
             <Bomblobber />
+          </Route>
+          <Route path={`${path}/crapsbattle`}>
+            <div>
+              <CrapsBattle />
+            </div>
           </Route>
           <Route path={`${path}/ins-and-outs`}>
             <InsAndOuts />
@@ -105,6 +121,21 @@ function Bomblobber() {
     </Fade>
   );
 }
+
+// function CrapsBattle() {
+//   return (
+//     <Fade>
+//       <iframe
+//         title="crapsbattle"
+//         style={{ border: "none" }}
+//         height="600px"
+//         width="600px"
+//         id="crapsbattle-game"
+//         src="/crapsbattle/index.html"
+//       />
+//     </Fade>
+//   );
+// }
 
 function Dlivr() {
   return (
