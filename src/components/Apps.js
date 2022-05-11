@@ -122,21 +122,6 @@ function Bomblobber() {
   );
 }
 
-// function CrapsBattle() {
-//   return (
-//     <Fade>
-//       <iframe
-//         title="crapsbattle"
-//         style={{ border: "none" }}
-//         height="600px"
-//         width="600px"
-//         id="crapsbattle-game"
-//         src="/crapsbattle/index.html"
-//       />
-//     </Fade>
-//   );
-// }
-
 function Dlivr() {
   return (
     <Fade>

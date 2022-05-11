@@ -12,6 +12,7 @@
     "react-awesome-reveal": "^3.0.0",
     "react-chrono": "^1.14.0",
     "react-dom": "^18",
+    "react-markdown": "^8.0.3",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "socket.io-client": "^4.5.0",
