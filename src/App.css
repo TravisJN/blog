@@ -26,7 +26,7 @@
 
 .navbar {
   display: flex;
-  margin-left: 0.5em;
+  margin-left: 3.5em;
   align-items: flex-end;
   /* margin-top: 1em; */
   /* background-color: rgba(255, 0, 0, 0.3); */
@@ -54,7 +54,6 @@
   display: flex;
   flex-direction: column;
   margin-left: 1em;
-  /* background-color: rgba(255, 0, 0, 0.3); */
 }
 
 .page-title {
@@ -82,7 +81,7 @@
 }
 
 .app-container {
-  width: 70%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   margin-top: 10px;
@@ -99,4 +98,47 @@
   display: flex;
   flex-direction: column;
   margin-top: 10px;
+}
+
+.selfie-image {
+  max-width: 175px;
+  max-height: 240px;
+  width: auto;
+  height: auto;
+  border-radius: 80px;
+  /* box-shadow: 1px 1px 5px #888888; */
+}
+
+.about-container {
+  display: flex;
+  width: 80%;
+  align-items: center;
+}
+
+.about-text {
+  padding-left: 15px;
+  padding-bottom: 10px;
+  font-family: "Alata";
+}
+
+.about-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-subcontainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+}
+
+.app-name {
+  font-family: "Alata";
+  font-size: 1.5em;
+  padding-right: 10px;
+}
+
+.app-name-container {
+  display: flex;
+  align-items: center;
 }

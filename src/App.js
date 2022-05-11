@@ -1,17 +1,15 @@
-import React from 'react';
+import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Redirect,
 } from "react-router-dom";
-import './App.css';
-import Navbar from './components/Navbar';
-import Works from './components/Works';
-import About from './components/About';
-import Apps from './components/Apps';
-import Sites from './components/Sites';
-import Resume from './components/Resume';
+import "./App.css";
+import Navbar from "./components/Navbar";
+import About from "./components/About";
+import Apps from "./components/Apps";
+import Resume from "./components/Resume";
 
 function App() {
   return (
@@ -25,16 +23,10 @@ function App() {
         <div className="main-container">
           <Switch>
             <Route exact path="/">
-              <Redirect to={{ pathname: '/about' }} />
-            </Route>
-            <Route path="/works">
-              <Works />
+              <Redirect to={{ pathname: "/about" }} />
             </Route>
             <Route path="/apps">
               <Apps />
-            </Route>
-            <Route path="/sites">
-              <Sites />
             </Route>
             <Route path="/resume">
               <Resume />
