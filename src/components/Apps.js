@@ -143,7 +143,7 @@ function Dlivr() {
           <div className="app-name-container">
             <span className="app-name">Dlivr Store</span>
             <a
-              href="https://apps.apple.com/us/app/ins-outs-food-symptom-log/id1529371763"
+              href="https://apps.apple.com/us/app/dlivr-store/id1564525503"
               style={{ textDecoration: "none" }}
               target="_blank"
               rel="noopener noreferrer"
@@ -178,7 +178,7 @@ function Dlivr() {
           <div className="app-name-container">
             <span className="app-name">Dlivr Drive</span>
             <a
-              href="https://apps.apple.com/us/app/ins-outs-food-symptom-log/id1529371763"
+              href="https://apps.apple.com/us/app/dlivr-drive/id1561686024"
               style={{ textDecoration: "none" }}
               target="_blank"
               rel="noopener noreferrer"
